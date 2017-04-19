@@ -6,22 +6,24 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ChartComponent } from './chart/chart.component';
-import { RouterModule, Route} from '@angular/router';
+import { RouterModule, Routes} from '@angular/router';
 
-const appRoutes:Route = [
+const appRoutes:Routes = [
   {path:'',redirectTo:'home',pathMatch:'full'},
   {path:'home',component:HomeComponent},
-  {path:'chat',component:ChartComponent}
+  {path:'chart',component:ChartComponent}
 ]
 @NgModule({
   declarations: [
+    HomeComponent,
     AppComponent,
     ChartComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]

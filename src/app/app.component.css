@@ -1,0 +1,57 @@
+.header {
+    font-size: 16px;
+    font-weight: 400;
+    height: 58px;
+    border-bottom: 1px solid #ddd;
+    background-color: #f8f9fa;
+    color: #4b4b4b;
+}
+.logo {
+    height: 58px;
+    line-height: 58px; 
+    float: left;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 50px;
+    font-size: 28px;
+    font-weight: 700;
+}
+nav {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Microsoft Yahei;
+    height: 58px;
+    line-height: 58px;
+    margin: 0 auto;
+    float: left;
+    width: 500px;    
+}
+.navbar {
+    padding: 0 10px;
+    color: #4b4b4b;
+    position: relative;
+}
+.navbar:after {
+    transition: all .2s linear;
+    position: absolute;
+    content: '';
+    width: 0px;
+    height: 2.5px;
+    background-color: #1796f9;
+    top: 40px;
+    left: 4px;
+}
+.navbar:hover::after,.navbar.active::after {
+    width: 50px;
+}
+.login-area{
+    float: right;
+    height: 58px;
+    line-height: 58px;
+    margin-right: 50px;
+}
+.login,.signup {
+    display: inline-block;
+    width: 60px;
+    cursor: pointer;
+}
