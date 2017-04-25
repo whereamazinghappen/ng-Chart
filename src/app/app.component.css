@@ -12,7 +12,7 @@
     float: left;
     font-size: 20px;
     font-weight: 500;
-    padding: 0 50px;
+    padding: 0 20px;
     font-size: 28px;
     font-weight: 700;
 }
@@ -23,8 +23,7 @@ nav {
     height: 58px;
     line-height: 58px;
     margin: 0 auto;
-    float: left;
-    width: 500px;    
+    float: left;   
 }
 .navbar {
     padding: 0 10px;
@@ -48,7 +47,6 @@ nav {
     float: right;
     height: 58px;
     line-height: 58px;
-    margin-right: 50px;
 }
 .login,.signup {
     display: inline-block;

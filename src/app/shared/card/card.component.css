@@ -1,0 +1,41 @@
+.card {
+    width: 264px;
+    height: 240px;
+    float: left;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-left: 6px;
+}
+.card-head {
+    background: #0f52c1; 
+    height: 74px;
+    color: #fff;
+}
+.game-time,.game-status {
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+}
+.card-content {
+    height: 114px;
+    background-color: #eee;
+}
+.card-action {
+    height: 52px;
+    background-color: #eee;
+}
+.card-action-btn {
+    height: 100%;
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+.card-action .btn {
+    width: 100px;
+    height: 32px;
+    line-height: 32px;
+    margin: 0 auto;
+    background-color: #ccc;
+    border-radius: 15px;
+    cursor: pointer;
+}

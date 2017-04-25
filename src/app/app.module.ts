@@ -6,6 +6,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ChartComponent } from './chart/chart.component';
+import { CardComponent } from './shared/card/card.component';
 import { RouterModule, Routes} from '@angular/router';
 
 const appRoutes:Routes = [
@@ -17,7 +18,8 @@ const appRoutes:Routes = [
   declarations: [
     HomeComponent,
     AppComponent,
-    ChartComponent
+    ChartComponent,
+    CardComponent 
   ],
   imports: [
     BrowserModule,
