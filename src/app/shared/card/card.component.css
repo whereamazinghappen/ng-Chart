@@ -20,6 +20,28 @@
     height: 114px;
     background-color: #eee;
 }
+.card-content img{
+    width: 70px;
+    height: 70px;
+}
+.card-content .team-home,.card-content .team-guest,.card-content .team-points{
+    float: left;
+    height: 114px;
+}
+.card-content .team-home,.card-content .team-guest{
+    width: 40%;     
+}
+.card-content .team-home-icon,.card-content .team-guest-name,.card-content .team-guest-icon,.card-content .team-home-name{
+    text-align: center;
+}
+.team-home-icon,.team-guest-icon{
+    padding-top: 15px;
+}
+.card-content .team-points{
+    width: 20%;
+    text-align: center;
+    line-height: 100px;
+}
 .card-action {
     height: 52px;
     background-color: #eee;

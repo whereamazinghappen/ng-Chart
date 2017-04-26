@@ -1,7 +1,7 @@
 <div class="card">
   <div class="card-head">
-    <div class="game-time">{{ game.gameTime }}</div>
-    <div class="game-status">{{ game.gameStatus }}</div>
+    <div class="game-time">{{ game.gameTime | slice:11:16 }}</div>
+    <div class="game-status">{{ game.gameStatus | status }}</div>
   </div>
   <div class="card-content">
     <div class="team-home">
@@ -12,12 +12,12 @@
       VS      
     </div>
     <div class="team-guest">
-      <div class="team-guest-icon">{{ game.teams[1].icon }}</div>
+      <div class="team-guest-icon"><img src="{{ game.teams[1].icon }}" alt="{{ game.teams[1].name }}"></div>
       <div class="team-guest-name">{{ game.teams[1].name }}</div>
     </div>
   </div>
   <div class="card-action">
-    <div class="analyse card-action-btn"><div class="btn">数据分析</div></div>
-    <div class="talk card-action-btn"><div class="btn">赛后讨论</div></div>
+    <div class="analyse card-action-btn"><div (click)="analyse(game.id)" class="btn">数据分析</div></div>
+    <div class="talk card-action-btn"><div (click)="talkabout(game.id)" class="btn">赛后讨论</div></div>
   </div>
 </div>

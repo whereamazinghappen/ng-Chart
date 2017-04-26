@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { ChartComponent } from './chart/chart.component';
 import { CardComponent } from './shared/card/card.component';
 import { RouterModule, Routes} from '@angular/router';
+import { StatusPipe } from './shared/pipes/status.pipe';
 
 const appRoutes:Routes = [
   {path:'',redirectTo:'home',pathMatch:'full'},
@@ -19,7 +20,8 @@ const appRoutes:Routes = [
     HomeComponent,
     AppComponent,
     ChartComponent,
-    CardComponent 
+    CardComponent,
+    StatusPipe 
   ],
   imports: [
     BrowserModule,
