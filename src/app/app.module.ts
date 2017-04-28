@@ -9,11 +9,15 @@ import { ChartComponent } from './chart/chart.component';
 import { CardComponent } from './shared/card/card.component';
 import { RouterModule, Routes} from '@angular/router';
 import { StatusPipe } from './shared/pipes/status.pipe';
-
+import { UserService } from './shared/service/user/user.service';
+import { AccessGuard } from './guard/access.guard';
 const appRoutes:Routes = [
   {path:'',redirectTo:'home',pathMatch:'full'},
   {path:'home',component:HomeComponent},
-  {path:'chart',component:ChartComponent}
+  { path:'chart',  
+    component:ChartComponent,
+    canActivate:[AccessGuard]
+  }
 ]
 @NgModule({
   declarations: [
@@ -29,7 +33,7 @@ const appRoutes:Routes = [
     HttpModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

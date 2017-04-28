@@ -1,0 +1,95 @@
+.main {
+    width: 1080px;
+    margin: 0 auto;
+    height: 100%;
+    padding-top:20px;
+}
+.online-left {
+    position: relative;
+    width: 350px;
+    height: 100%;
+    float: left;
+    background-color: #dfe3e6;
+}
+.online-search {
+    height: 36px;
+    margin: 12px 20px;
+    border-bottom: 1px solid #1796f9;
+    width: 310px;
+}
+span.search-icon {
+    display: inline-block;
+    width: 40px;
+    height: 36px;
+    background-color: #f3f5f7;
+    vertical-align: top
+}
+.online-search input {
+    font-size: 14px;
+    width: 270px;
+    height: 34px;
+    margin: 0;
+    border: none;
+}
+.online-search input:focus {
+    border: none;
+    outline: none;
+}
+.avator img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+.member {
+    padding: 10px 20px;
+    border-top: 1px solid #ccc;
+    position: relative;
+}
+.member:hover {
+    background-color: #f3f5f7; 
+}
+.joinTime {
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    color: seagreen;
+}
+label.nickname {
+    display: inline-block;
+    margin-left: 20px;
+    width: 150px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.chart-zone {   
+    width: 730px;
+    height: 100%;
+    background-color: #f3f5f7;
+    overflow: hidden;
+}
+.messages-box {
+    height: calc(100% - 250px);
+    border-bottom: 1px solid #ccc;
+}
+.edit-box {
+    height: 250px;
+}
+.edit-headbar {
+    height: 40px;
+}
+.edit-content {
+    height:170px
+}
+#editArea {
+    height: 100%;
+    padding: 20px;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;    
+}
+.edit-action {
+    height: 40px;
+}
