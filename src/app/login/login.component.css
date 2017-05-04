@@ -1,0 +1,69 @@
+#overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: rgba(0,0,0,.65);   
+}
+.login-box {
+    position: fixed;
+    background: #fff;
+    z-index: 2333;
+    width: 360px;
+    padding-bottom: 30px;
+    left: 50%;
+    top: 50%;
+    margin: -218px 0 0 -180px;
+    box-shadow: 0 0 3px rgba(0,0,0,.25);
+    transition: all .2s;    
+}
+.login-box-header h1 {
+    font-size: 16px;
+    line-height: 49px;
+    height: 49px;
+    color: #787d82;
+    border-bottom: 1px solid #d0d6d9;
+    padding: 0 20px;
+}
+.login-box-header span {
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+}
+.login-box-body {
+    height: 220px;
+    padding: 0 20px;
+}
+.login-box-body input {
+    width: 300px;
+    padding: 9px 9px 9px 10px;
+    background-color: #fff;
+    border:1px solid #d0d6d9;
+    box-shadow: 2px 0 5px 0 #fff;
+    color:#777;
+}
+.login-box-body input[name='verify'] {
+    width: 160px;
+}
+.login-box-body input:focus {
+    outline: none;
+}
+.login-box-footer {
+    padding: 0 20px;
+}
+.login-btn {
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    background-color: #4490f7;
+    color: #fff;
+    cursor: pointer;
+}
+.input-container {
+    margin-top: 30px;
+}

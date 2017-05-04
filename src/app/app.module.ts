@@ -11,6 +11,7 @@ import { RouterModule, Routes} from '@angular/router';
 import { StatusPipe } from './shared/pipes/status.pipe';
 import { UserService } from './shared/service/user/user.service';
 import { AccessGuard } from './guard/access.guard';
+import { LoginComponent } from './login/login.component';
 const appRoutes:Routes = [
   {path:'',redirectTo:'home',pathMatch:'full'},
   {path:'home',component:HomeComponent},
@@ -25,7 +26,8 @@ const appRoutes:Routes = [
     AppComponent,
     ChartComponent,
     CardComponent,
-    StatusPipe 
+    StatusPipe,
+    LoginComponent 
   ],
   imports: [
     BrowserModule,
@@ -33,7 +35,7 @@ const appRoutes:Routes = [
     HttpModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [UserService],
+  providers: [UserService,AccessGuard,{provide:'apiBase',useValue:''}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
